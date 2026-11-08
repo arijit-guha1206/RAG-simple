@@ -1,0 +1,29 @@
+[project]
+name = "ragyt"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "chromadb>=1.5.9",
+    "faiss-cpu>=1.15.1",
+    "langchain>=1.4.7",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.7.3",
+    "langchain-groq>=1.1.3",
+    "langchain-openai>=1.7.3",
+    "langgraph>=1.2.19",
+    "pymupdf>=2.0",
+    "pypdf>=6.21.4",
+    "python-dotenv>=1.2.4",
+    "sentence-transformers>=6.2.0",
+    "streamlit>=1.67.0",
+    "typesense>=2.1.1",
+]
+
+[project.scripts]
+ragyt = "ragyt:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
